@@ -21,14 +21,20 @@
     }
   ],
   "require": {
-    "php": ">=7.1,<7.3",
-    "zibios/wrike-php-library": "^3.0-dev",
+    "php": "^7.1",
+    "zibios/wrike-php-library": "master-dev",
     "guzzlehttp/guzzle": ">=6.0,<7.0",
     "ext-json": "*"
   },
   "require-dev": {
     "phpunit/phpunit": ">=6.0,<8.0"
   },
+  "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/ivinteractive/wrike-php-library"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "Zibios\\WrikePhpGuzzle\\": "src/"
